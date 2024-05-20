@@ -1,0 +1,17 @@
+.homeContainer{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 243, 243);
+  height: fit-content;
+  /* overflow-y: scroll; */
+}
+
+@media screen and (max-width:412px){
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+}

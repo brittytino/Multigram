@@ -1,0 +1,230 @@
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0px;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+}
+.heading{
+    font-size: 22px;
+    color: #000000;
+    margin: 14px 0px;
+}
+.Links{
+    width: 100%;
+}
+.Icon {
+    color: #A974FF;
+    font-size: 22px;
+}
+.sideContain{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    padding: 18px 16px;
+    box-sizing: border-box;
+}
+.sideContain.active {
+    background-color: rgb(199, 202, 199); 
+    justify-content: flex-end;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .sideContain:hover{
+    background-color: rgb(199, 202, 199); 
+    justify-content: flex-end;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+.accountButton{
+    display:flex;
+    align-items: center;
+    width:100%;
+    padding:1rem 1.6rem;
+}
+.loginLink{
+    font-size:1.5rem;
+}
+.Link{
+    text-decoration: none !important;
+    color: black;
+    font-size: 14px;
+}
+.userbutton{
+    width:40px;
+    height:40px;   
+}
+.Login{
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0 10px;
+    width: 100%;
+    padding: 10px 0;
+    /* box-shadow: 0 0 20px rgba(104, 85, 224, 0.2); */
+    transition: 0.4s;
+}
+.Login:hover{
+    background-color: #A974FF;
+}
+.Avatar{
+    width: 60px;
+    height: 60px;
+    padding-left: 15px;
+}
+.Logout{
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0 10px;
+    width: 50px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+    background-color: #A974FF;
+}
+.Logout:hover{
+    background-color: white;
+}
+
+.AccountButton{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .menuContainer{
+        display: flex;
+        flex-direction: column;
+        width: 16%;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        padding: 20px 0px;
+        position: fixed;
+        height: 100vh;
+        top:0;
+        left: 0;
+    }
+    .Link{
+        text-decoration: none !important;
+        color: black;
+        font-size: 13px;
+    }
+    .heading{
+        font-size: 20px;
+        color: #000000;
+        margin: 14px 0px;
+    }
+    
+}
+@media screen and (max-width:908px) {
+    .menuContainer{
+        display: flex;
+        flex-direction: column;
+        width: 17%;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        padding: 20px 0px;
+        position: fixed;
+        height: 100vh;
+        top:0;
+        left: 0;
+    }
+    .Link{
+        text-decoration: none !important;
+        color: black;
+        font-size: 11px;
+    }
+    .heading{
+        font-size: 18px;
+        color: #000000;
+        margin: 14px 0px;
+    }
+}
+@media screen and (max-width:550px) {
+    .menuContainer {
+        z-index: 6;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed !important;
+        top: 94vh;
+
+      }
+    .Link{
+        display: none;
+    }
+    .heading{
+        font-size: 12px;
+        color: #000000;
+        margin: 14px 0px;
+        display: none;
+    }
+    .Links{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        min-width: 50px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+        height: 100px;
+    }
+    .sideContain{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        height: 80px;
+        padding: 0px 16px 6px 16px;
+        box-sizing: border-box;
+    }
+    
+    .Login{
+        cursor: pointer;
+        border: 0;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 12px;
+        margin: 0 10px;
+        width: 50px;
+        padding: 10px 0;
+        box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+        transition: 0.4s;
+        display: none;
+    }
+    .userbutton{
+        /* width:40px;
+        height:40px;   */
+        display: none;
+    }
+    .accountButton{
+        display:none;
+    }
+}
